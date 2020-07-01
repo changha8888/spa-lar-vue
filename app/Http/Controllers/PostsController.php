@@ -48,6 +48,7 @@ class PostsController extends Controller
      */
     public function index()
     {
+        dd(1);
         $this->repository->pushCriteria(app('Prettus\Repository\Criteria\RequestCriteria'));
         $posts = $this->repository->all();
 
